@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Fundamentals</title>
+</head>
+
+<body>
+  <h2>Let's know what is javascript</h2>
+
+  <h3>What is JavaScript?</h3>
+  <ul>
+    <li>High-level, interpreted programming language.</li>
+    <li>Conforms to the ECMAScript specification.</li>
+    <li>Multi-paradigm.</li>
+    <li>Client-side as well as Server-side.</li>
+  </ul>
+
+
+  HTML and script
+
+  we all know how to cennect script in html
+
+  <h3>Variables</h3>
+  <h4>var</h4>
+  var is flexilbe we can do so many things and this make js different form other PL
+  <h3>let (ES6)</h3>
+  <ul>
+    <li>Variables defined with let cannot be Redeclared.</li>
+    <li>Variables defined with let must be Declared before use.</li>
+    <li>Variables defined with let have Block Scope.</li>
+  </ul>
+  <h3>const (ES6)</h3>
+  <ul>
+    <li>Variables defined with const cannot be Redeclared.</li>
+    <li>Variables defined with const cannot be Reassigned.</li>
+    <li>Variables defined with const have Block Scope.</li>
+  </ul>
+
+  <h3>Data Types</h3>
+  <ul>
+    <li>JavaScript has dynamic types.</li>
+    <li>number</li>
+    <li>string</li>
+    <li>boolean</li>
+    <li>array</li>
+    <li>object</li>
+    <li>undefine</li>
+    <li>null</li>
+  </ul>
+
+  <h3>Type Conversion</h3>
+  <h4>Converting Strings to Numbers</h4>
+  <ul>
+
+    <li>`Number()`</li>
+    <li>`parseFloat()`</li>
+    <li>`parseInt()`</li>
+    <li>unary + operator</li>
+  </ul>
+
+
+  <h4>Converting Numbers to Strings</h4>
+  <li>`String()`</li>
+  <li>`x.toString()`</li>
+
+  <h4>Converting Dates to Numbers</h4>
+  <li>`Number(new Date())`</li>
+  <li>`new Date().getTime()`</li>
+
+  <h4>Converting Dates to String</h4>
+  <li>`String(Date())`</li>
+  <li>`Date().toString()`</li>
+
+  <h4>Converting Booleans to Numbers</h4>
+  <li>`Number(false)`</li>
+  <li>`Number(true)`</li>
+
+  <h4>Converting Booleans to Strings</h4>
+  <li>`String(false)`</li>
+  <li>`String(true)`</li>
+  <li>`false.toString()`</li>
+  <li>`true.toString()`</li>
+  <h4>Function</h4>
+  Function are set of codes that does some task
+  <ul>
+    <li>Arrow function</li>
+    <li>High order array method</li>
+    <li>Constructor function and prototypes intro</li>
+    <li>ES6 class intro</li>
+    <li>prototypes</li>
+    <li>Prototypal inheritance</li>
+    <li>ES6 classes and sub classes</li>
+  </ul>
+  <h4>Function
+  </h4>
+  <pre>
+    function functionName() 
+    {
+      console.log('something');
+    }
+
+    function greetPerson(name)
+    {
+      console.log("Hello ${name}!");
+    }
+
+    function getAge(year)
+    {
+      const today= new Date();
+      return today.getFullYear()-year;
+    }
+    function greetStranger()
+    {
+      return "everyone";
+    }
+    greetPerson("jidesh")
+    gives output Hello jidesh
+    console.log(getAge(2010)); ==> gives 12 in 2022
+  </pre>
+  Single responsibility principal is programming principal
+
+<h4>Arrow function</h4>
+<p>Similar to lambda function in C#</p>
+<pre>
+above function can be easily change into arrow functionName
+
+functionname = () => returing things
+
+greet= () => console.log("Hello every one");
+greet();
+
+greetPerson = (name) => console.log(`hello ${name}`)
+greetPerson("jidesh");
+
+getAge=(year)=>{
+    const today=new Date();
+    return today.getFullYear()-year
+}
+console.log(getAge(2010));
+
+greetStranger=()=>'everyone';
+
+greetPerson(greetStranger());
+</pre>
+<button onclick="clickHandler()">Click me</button>
+
+open console and click on above button
+
+<pre>
+  function clickHandler()
+{
+    console.log("button clicked");
+}
+
+clickHandler = () => "button clicked"
+
+this keyword
+
+this behave differently on different getTime
+
+in different sinario it works differently
+
+function test(){
+  console.log(this);
+}
+
+test();
+it log window object
+
+if this is written inside class it log class object
+</pre>
+
+<h4>Higher order array method</h4>
+
+<pre>
+  function inside function is called call back function
+
+  eg
+
+  function printMyName(fn) {
+    console.log(fn());
+  }
+  
+
+  print(function() {return 'Jidesh'});
+</pre>
+  <h4>Strings and string methods</h4>
+  <h4>Numbers and Math object</h4>
+  <h4>Array and Array methods</h4>
+  <h4>Object literals</h4>
+  <h4>JSON</h4>
+  <h4>Conditions</h4>
+  <h4>Loops</h4>
+  <h4>Types of loops</h4>
+  <ul>
+    <li>for</li>
+    <li>while</li>
+    <li>do while</li>
+    <li>for of</li>
+    <li>for in</li>
+  </ul>
+</body>
+<script src="script.js">
+</script>
+<script src="function.js">
+</script>
+</html>
